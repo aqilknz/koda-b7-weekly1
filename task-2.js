@@ -1,12 +1,11 @@
 function getMultiplicationTable(jumlah) {
-    let tablePerkalian = "";
     for (let i = 1; i <=jumlah; i++) {
+        let row = "";
         for (let j = 1; j <= jumlah; j++) {
-            tablePerkalian += i * j + " ";
+            row += i * j + " ";
         }
-        tablePerkalian += "\n";
+        console.log(row);
     }
-    return tablePerkalian;
 }
 console.log(getMultiplicationTable(5))
 
