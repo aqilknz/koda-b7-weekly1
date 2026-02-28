@@ -1,19 +1,19 @@
 // celcius ke fahrenheit
 function cToF (c) {
-    if (typeof c !== "number" || isNaN(c)){
+    if (typeof c !== "number"){
         return "harus berupa angka!"
     }
     return (c * 9/5 + 32);
 }
 // fahrenheit ke celcius
 function fToC (f) {
-    if (typeof f !== "number" || isNaN(f)){
+    if (typeof f !== "number"){
         return "harus berupa angka!"
     }
     return (f-32) * 5/9;;
 }
 
-let suhuC = "nami"
+let suhuC = "nama"
 let suhuF = 75
 console.log(`Suhu: ${cToF(suhuC)}`)
 console.log(`Suhu: ${fToC(suhuF)}`)
